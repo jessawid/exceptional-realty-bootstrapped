@@ -11,3 +11,45 @@ img, video, audio, iframe, table, form {
 .row {
   margin-bottom: 20px;
 }
+
+/*/////// CAROUSEL STYLES ////////*/
+/*bootstrap is media up so start small*/
+
+
+#carousel-example-generic .item img {
+  height: auto;
+}
+
+.carousel-caption p {
+  display: none;
+}
+
+/*small devices*/
+
+@media only screen and (min-width: 768px) {
+  #carousel-example-generic .item img {
+    height: 384px;
+  }
+
+}
+
+/*medium devices*/
+
+@media only screen and (min-width: 992px) {
+  #carousel-example-generic .item img {
+    height: 496px;
+  }
+
+  .carousel-caption p {
+    display: block;
+  }
+}
+
+/*large devices*/
+
+@media only screen and (min-width: 1200px) {
+  #carousel-example-generic .item img {
+    height: 600;
+  }
+
+}
